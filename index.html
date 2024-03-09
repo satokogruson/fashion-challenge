@@ -249,96 +249,94 @@
         background-blend-mode: hard-light;
         margin: -20vw auto;
       }
-@media (max-width: 768px) {
-  .input-group .form-control,
-  .input-group .btn {
-    width: 100%;
-    margin-bottom: 10px;
-    border-radius: 5px;
-  }
-  
-  .input-group .form-control {
-    margin-bottom: 0.5rem; 
-  }
-  
-  .input-group,
-  .input-group .btn {
-    flex-wrap: wrap;
-  }
-  
-  .input-group .btn {
-    width: 100%;
-    flex-grow: 1;
-  }
-}
+      @media (max-width: 768px) {
+        .input-group .form-control,
+        .input-group .btn {
+          width: 100%;
+          margin-bottom: 10px;
+          border-radius: 5px;
+        }
 
-@media (min-width: 769px) {
-  .input-group .form-control {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
+        .input-group .form-control {
+          margin-bottom: 0.5rem;
+        }
 
-  .input-group .btn {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-}
+        .input-group,
+        .input-group .btn {
+          flex-wrap: wrap;
+        }
 
-.kimono-card-body {
-  text-align: center;
-}
-@media (max-width: 768px) {
-  .input-group {
-    flex-direction: column;
-  }
-  .input-group > * {
-    border-radius: 5px !important;
-    margin: 0.25rem 0;
-  }
-}
+        .input-group .btn {
+          width: 100%;
+          flex-grow: 1;
+        }
+      }
 
-@media (min-width: 769px) {
-  .promo-card {
-    justify-content: space-between; 
-  }
-  .float-img {
-    flex: 0 0 auto; 
-  }
-  .kimono-card {
-    flex: 1;
-    max-width: calc(100% - 150px); 
-  }
-  .kimono-card-body {
-    text-align: left; 
-  }
-  .input-group {
-    justify-content: flex-end; 
-  }
-}
+      @media (min-width: 769px) {
+        .input-group .form-control {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+        }
 
-.float-img {
-  margin-right: 20px; 
-}
+        .input-group .btn {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+        }
+      }
 
-.line {
-  width: 50%;
-  margin: 1rem auto;
-}
+      .kimono-card-body {
+        text-align: center;
+      }
+      @media (max-width: 768px) {
+        .input-group {
+          flex-direction: column;
+        }
+        .input-group > * {
+          border-radius: 5px !important;
+          margin: 0.25rem 0;
+        }
+      }
 
-.kimono-card-body {
-  padding: 2rem;
-}
+      @media (min-width: 769px) {
+        .promo-card {
+          justify-content: space-between;
+        }
+        .float-img {
+          flex: 0 0 auto;
+        }
+        .kimono-card {
+          flex: 1;
+          max-width: calc(100% - 150px);
+        }
+        .kimono-card-body {
+          text-align: left;
+        }
+        .input-group {
+          justify-content: flex-end;
+        }
+      }
 
-.input-group {
-  align-items: center; 
-}
+      .float-img {
+        margin-right: 20px;
+      }
 
+      .line {
+        width: 50%;
+        margin: 1rem auto;
+      }
+
+      .kimono-card-body {
+        padding: 2rem;
+      }
+
+      .input-group {
+        align-items: center;
+      }
 
       .input-group input,
       .input-group button {
         height: 44px;
       }
-
 
       .line {
         width: 100%;
@@ -375,54 +373,77 @@
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary py-3 px-5">
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Shop</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-              >Categories</a
-            >
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Our Story</a></li>
-              <li><a class="dropdown-item" href="#">Blog</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item" href="#">Contact Us</a></li>
-            </ul>
-          </li>
-        </ul>
-        <div class="navbar-center-logo mx-auto">
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary py-3">
+      <div class="container-fluid">
+        <a class="navbar-brand mx-auto d-lg-none" href="#">
           <img
             src="/assets/Salz-Tokyo_logo.avif"
             alt="Logo"
             style="width: 150px"
           />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shop</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Categories</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Our Story</a></li>
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                </ul>
+              </li>
+            </ul>
+          </ul>
+          <!-- The logo for larger screens should go here outside of the collapse div -->
+          <a class="navbar-brand d-none d-lg-block" href="#">
+            <img
+              src="/assets/Salz-Tokyo_logo.avif"
+              alt="Logo"
+              style="width: 150px"
+            />
+          </a>
+          <form class="d-flex my-0" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-dark" type="submit">Search</button>
+          </form>
         </div>
-        <form class="d-flex" role="search">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-dark" type="submit">Search</button>
-        </form>
       </div>
     </nav>
+
     <!-- /carousel -->
     <main class="bg-body-secondary">
       <div id="myCarousel" class="carousel slide" data-bs-ride="true">
@@ -696,35 +717,43 @@
           </div>
         </section>
       </div>
-<section class="text-bg-dark py-5">
-  <div class="container py-5">
-    <div class="row justify-content-center align-items-center">
-      <!-- Card Body Content -->
-      <div class="col-12 col-md-8 col-lg-6 order-2 order-md-1">
-        <div class="kimono-card-body text-center bg-light p-4">
-          <h5 class="kimono-card-title">Join Our Mailing List</h5>
-          <div class="line"></div>
-          <p class="kimono-card-text">
-            Want to be the first to hear about new products,
-            sales, and blog posts?<br />
-            Submit your email now!
-          </p>
-          <div class="input-group mt-4">
-            <input type="text" class="form-control" placeholder="Enter your email" aria-label="Recipient's username" />
-            <button class="btn btn-dark" type="button">Subscribe</button>
+      <section class="text-bg-dark py-5">
+        <div class="container py-5">
+          <div class="row justify-content-center align-items-center">
+            <!-- Card Body Content -->
+            <div class="col-12 col-md-8 col-lg-6 order-2 order-md-1">
+              <div class="kimono-card-body text-center bg-light p-4">
+                <h5 class="kimono-card-title">Join Our Mailing List</h5>
+                <div class="line"></div>
+                <p class="kimono-card-text">
+                  Want to be the first to hear about new products, sales, and
+                  blog posts?<br />
+                  Submit your email now!
+                </p>
+                <div class="input-group mt-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter your email"
+                    aria-label="Recipient's username"
+                  />
+                  <button class="btn btn-dark" type="button">Subscribe</button>
+                </div>
+              </div>
+            </div>
+            <!-- Mask Image -->
+            <div
+              class="col-12 col-md-4 col-lg-3 order-1 order-md-2 mb-3 mb-md-0 text-center"
+            >
+              <img
+                src="/assets/mask.png"
+                class="img-fluid card-pic slowfloat2s"
+                alt="mask"
+              />
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Mask Image -->
-      <div class="col-12 col-md-4 col-lg-3 order-1 order-md-2 mb-3 mb-md-0 text-center">
-        <img src="/assets/mask.png" class="img-fluid card-pic slowfloat2s" alt="mask" />
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
+      </section>
     </main>
 
     <footer class="footer pt-3">

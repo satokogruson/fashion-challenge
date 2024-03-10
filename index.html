@@ -59,14 +59,6 @@
         top: 50%;
         bottom: auto;
       }
-      @media (max-width: 768px) {
-        .carousel-caption {
-          display: block;
-          left: 10%;
-          transform: translateY(-50%);
-          top: 50%;
-        }
-      }
       .carousel-control-prev,
       .carousel-control-next {
         z-index: 2;
@@ -77,17 +69,6 @@
       .carousel-item img {
         object-fit: cover;
         height: 100%;
-      }
-
-      @media (max-width: 768px) {
-        .carousel-item,
-        .carousel-item img {
-          height: 50vh;
-        }
-        .carousel-control-prev,
-        .carousel-control-next {
-          display: none;
-        }
       }
       @media (max-width: 576px) {
         .carousel-item,
@@ -100,7 +81,25 @@
           display: none;
         }
         .carousel-caption {
-          bottom: 10%;
+          background-color: rgb(43, 43, 43, 0.5);
+          display: block;
+          left: 5% !important;
+          right: 5% !important;
+          text-align: left;
+          padding-right: 3rem;
+          max-width: 100% !important;
+        }
+        .carousel-caption h1 {
+          font-size: 40px !important;
+          font-weight: bold;
+        }
+        .carousel-caption h2 {
+          font-size: 30px !important;
+          font-weight: bold;
+        }
+        .carousel-caption h4 {
+          font-size: 18px !important;
+          font-weight: 300 !important;
         }
       }
       .hero-title {
@@ -337,7 +336,7 @@
       <div class="container-fluid">
         <a class="navbar-brand mx-auto d-lg-none" href="#">
           <img
-            src="/assets/Salz-Tokyo_logo.avif"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/118/373/original/Salz_Tokyo_logo.png?1710055845"
             alt="Logo"
             style="width: 150px"
           />
@@ -385,7 +384,7 @@
           </ul>
           <a class="navbar-brand d-none d-lg-block" href="#">
             <img
-              src="/assets/Salz-Tokyo_logo.avif"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/118/373/original/Salz_Tokyo_logo.png?1710055845"
               alt="Logo"
               style="width: 150px"
             />
@@ -438,32 +437,40 @@
             <picture>
               <source
                 media="(max-width: 576px)"
-                srcset="/assets/Hero_main_small.png"
+                srcset="
+                  https://s3.amazonaws.com/shecodesio-production/uploads/files/000/118/259/original/Hero_main_small.png?1710006880
+                "
               />
               <img
-                src="/assets/Hero_main.png"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/118/260/original/Hero_main.png?1710006993"
                 class="d-block w-100"
                 alt="..."
               />
             </picture>
-            <div class="carousel-caption d-none d-md-block pb-5">
+            <div class="carousel-caption">
               <h1 style="font-size: 65px; font-weight: xx-large">
                 TRADITION REIMAGINED
               </h1>
-              <h2 style="font-weight: 200">
+              <h3 style="font-weight: 200">
                 A Modern Twist on Classic Japanese Kimonos
-              </h2>
+              </h3>
             </div>
           </div>
           <div class="carousel-item">
             <picture>
               <source
                 media="(max-width: 576px)"
-                srcset="/assets/Hero_2_small.png"
+                srcset="
+                  https://s3.amazonaws.com/shecodesio-production/uploads/files/000/118/256/original/Hero_2_small.png?1710006838
+                "
               />
-              <img src="/assets/Hero_2.png" class="d-block w-100" alt="..." />
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/118/261/original/Hero_2.png?1710007004"
+                class="d-block w-100"
+                alt="..."
+              />
             </picture>
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <h2>Check out our New Arrivals</h2>
               <h4 style="font-weight: 200">
                 Our designers are eager to please you!
@@ -476,11 +483,17 @@
             <picture>
               <source
                 media="(max-width: 576px)"
-                srcset="/assets/Hero_3_small.png"
+                srcset="
+                  https://s3.amazonaws.com/shecodesio-production/uploads/files/000/118/257/original/Hero_3_small.png?1710006846
+                "
               />
-              <img src="/assets/Hero_3.png" class="d-block w-100" alt="..." />
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/118/262/original/Hero_3.png?1710007012"
+                class="d-block w-100"
+                alt="..."
+              />
             </picture>
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <h2>Looking for something special?</h2>
               <h4 style="font-weight: 200">
                 Contact us and let's start talking!
@@ -493,11 +506,17 @@
             <picture>
               <source
                 media="(max-width: 576px)"
-                srcset="/assets/Hero_4_small.png"
+                srcset="
+                  https://s3.amazonaws.com/shecodesio-production/uploads/files/000/118/258/original/Hero_4_small.png?1710006858
+                "
               />
-              <img src="/assets/Hero_4.png" class="d-block w-100" alt="..." />
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/118/263/original/Hero_4.png?1710007030"
+                class="d-block w-100"
+                alt="..."
+              />
             </picture>
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <h2>Cool kimonos from Tokyo</h2>
               <h4 style="font-weight: 200">
                 We can deliver straight to your door!
@@ -547,7 +566,7 @@
               style="width: 100%"
             >
               <img
-                src="assets/SALZ-retro-kimono.jpg"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/118/265/original/SALZ-retro-kimono.jpg?1710007117"
                 class="card-img-top"
                 alt="..."
               />
@@ -564,7 +583,7 @@
               style="width: 100%"
             >
               <img
-                src="assets/Suika-Yukata.jpg"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/118/267/original/Suika-Yukata.jpg?1710007145"
                 class="card-img-top"
                 alt="..."
               />
@@ -581,7 +600,7 @@
               style="width: 100%"
             >
               <img
-                src="/assets/Modern_kimono.jpg"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/118/266/original/Modern_kimono.jpg?1710007131"
                 class="card-img-top"
                 alt="..."
               />
@@ -600,7 +619,7 @@
               style="width: 100%"
             >
               <img
-                src="assets/SALZlionkimono.jpg"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/118/269/original/SALZlionkimono.jpg?1710007172"
                 class="card-img-top"
                 alt="..."
               />
@@ -617,7 +636,7 @@
               style="width: 100%"
             >
               <img
-                src="assets/SALZ-dinosaur-kimono.jpg"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/118/268/original/SALZ-dinosaur-kimono.jpg?1710007159"
                 class="card-img-top"
                 alt="..."
               />
@@ -636,7 +655,7 @@
               style="width: 100%"
             >
               <img
-                src="/assets/ShishumaniaStegosaurusKimono.jpg"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/118/270/original/ShishumaniaStegosaurusKimono.jpg?1710007219"
                 class="card-img-top"
                 alt="..."
               />
@@ -654,7 +673,7 @@
       <!-- /.tour -->
       <div class="line mx-auto my-5" style="width: 30%"></div>
       <div class="container py-5 mb-0 mt-5">
-        <section class="about_section padding pt-0">
+        <section class="about_section padding py-0">
           <div class="text-center mx-0 lh-md">
             <h1>SALZ KIMONO STYLING TOUR</h1>
           </div>
@@ -681,17 +700,17 @@
               <div class="col-12 col-lg-6">
                 <div class="about_img">
                   <img
-                    src="/assets/kimono_tour_1.jpg"
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/118/272/original/kimono_tour_1.jpg?1710007367"
                     alt="idea-images"
                     class="about_img_1"
                   />
                   <img
-                    src="/assets/kimono_tour_3.jpg"
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/118/274/original/kimono_tour_3.jpg?1710007383"
                     alt="idea-images"
                     class="about_img_2"
                   />
                   <img
-                    src="/assets/kimono_tour_2.jpg"
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/118/273/original/kimono_tour_2.jpg?1710007375"
                     alt="idea-images"
                     class="about_img_3"
                   />
@@ -730,7 +749,7 @@
               class="col-12 col-md-4 col-lg-3 order-1 order-md-2 mb-3 mb-md-0 text-center"
             >
               <img
-                src="/assets/mask.png"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/118/275/original/mask.png?1710007404"
                 class="img-fluid card-pic slowfloat2s"
                 alt="mask"
               />
